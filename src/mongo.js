@@ -6,14 +6,22 @@ const url = 'mongodb://139.99.238.84:27017'; //27017
 const client = new MongoClient(url);//removed url
 const client2 = new MongoClient(url);//removed url
 
-async function main(min=300000, max=1500000) {
+async function call(coll = 'loc_data') {
     await client.connect();
-    await client2.connect();
     const db = client.db('vic_properties');
-    const db2 = client2.db('vic_properties');
-    const locCollection = db.collection('loc_data');
-    const priceCollection = db2.collection('price_data');
+    const locCollection = db.collection(coll);
     const docs = await locCollection.find({}).toArray();
+    return docs
+}
+
+async function main(min=300000, max=1500000) {
+
+    await client2.connect();
+
+    const db2 = client2.db('vic_properties');
+
+    const priceCollection = db2.collection('price_data');
+
     // console.log(docs);
     let len;
     let col;
