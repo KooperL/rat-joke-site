@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rat
+* source:	https://sketchfab.com/3d-models/rat-5a5a654eeeff4d3aa39f6487c31e9237
+* author:	asfodelo (https://sketchfab.com/asfodelo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rat" (https://sketchfab.com/3d-models/rat-5a5a654eeeff4d3aa39f6487c31e9237) by asfodelo (https://sketchfab.com/asfodelo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

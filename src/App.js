@@ -1,44 +1,18 @@
-import Navbar from './Navbar';
-import Home from './Home'
+import Model from "./Model";
+import ThreeScene from "./ThreeScene";
 
-/*
-function App() {
-    const title = 'this is a title';
-    const likes = 50;
-    return (
-    <div className="App">
-        <Navbar />
-        <div className="content">
-            <h1>{title}</h1>
-            <Home />
-            <p>Liked {likes} times</p>
-        </div>
-    </div>
-  );
+export default function App() {
+   return(
+	   <div className="App" style={{
+        backgroundImage:`url("http://phresh-af.com/images/fire.gif")`,
+        backgroundRepeat  : 'repeat',
+        // backgroundSize: 'cover',
+        width: '100vw',
+        height: '100vh',
+      }}>
+        <Model />
+	   </div>
+   )
 }
 
-export default App;
-*/
-
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { Surface } from "@progress/kendo-drawing";
-import { drawScene } from "./draw-scene";
-
-class App extends React.Component {
-  surface;
-  componentDidMount() {
-    drawScene(this.createSurface());
-  }
-  createSurface = () => {
-    const element = ReactDOM.findDOMNode(this);
-    this.surface = Surface.create(element);
-    return this.surface;
-  };
-  render() {
-    return <div id="surface" />;
-  }
-}
-export default App;
-// ReactDOM.render(<App />, document.querySelector("my-app"));
 
