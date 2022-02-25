@@ -6,7 +6,7 @@ export default function App() {
 	   <div className="App" style={{
         backgroundImage:`url("http://phresh-af.com/images/fire.gif")`,
         backgroundRepeat  : 'repeat',
-        // backgroundSize: 'cover',
+        backgroundSize: '10vh',
         width: '100vw',
         height: '100vh',
       }}>

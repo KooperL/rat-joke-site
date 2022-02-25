@@ -9,22 +9,23 @@ import * as THREE from 'three';
 const Rat = () => {
   const gltf = useLoader(GLTFLoader, "rat2/scene.gltf")
   useFrame(({clock}) => {
-    console.log(gltf)
-      gltf.scene.rotation.x = clock.getElapsedTime()
+    // console.log(gltf)
+      gltf.scene.rotation.x = clock.getElapsedTime()/2
+      gltf.scene.rotation.y = clock.getElapsedTime()
+      gltf.scene.rotation.z = clock.getElapsedTime()*2
   })
     return (
         <>
             <primitive
-	      position={[0, 0, 0]} // 
+	      position={[0, 0, 0]}
 	      object={gltf.scene}
-	      scale={5}
+	      scale={3}
 	    />
         </>
     );
 };
 
 function Model() {
-
    return(
       <Canvas camera={{ position: [10, 10, 5] }}>
            <Suspense fallback={null}>
@@ -32,7 +33,7 @@ function Model() {
                <pointLight position={[10, 10, 10]} />
                <ambientLight intensity={0.1} />
               <Rat 
-                rotation={new THREE.Euler(Math.PI / 2, 5, 0)}/>
+              />
             </ mesh>
            </Suspense>
       </Canvas>
