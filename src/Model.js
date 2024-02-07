@@ -2,9 +2,6 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Suspense } from "react";
-// import Combined from "./Combined";
-import * as THREE from 'three';
-
 
 const Rat = () => {
   const gltf = useLoader(GLTFLoader, "rat2/scene.gltf")

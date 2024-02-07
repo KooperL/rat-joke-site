@@ -1,5 +1,4 @@
 import Model from "./Model";
-import ThreeScene from "./ThreeScene";
 
 export default function App() {
    return(
